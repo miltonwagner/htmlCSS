@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px; /* Ajuste para evitar que o menu sobreponha o conteúdo */
+}
+
+#container {
+    margin: 0px auto;
+    width: 80%;   
+    overflow: hidden; /* Adicionado para conter os floats */
+}
+
+header,
+nav,
+footer,
+main {
+    float: left;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%; 
+    background-color: steelblue;
+    padding: 32px;
+    text-align: center;
+    color: white;
+}
+
+nav.superior{
+    width: 90%;
+    margin-bottom: 8%;
+}
+
+nav.topo {
+    width: 100%;
+    margin-bottom: 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    text-align: center;
+    z-index: 1000; /* Para garantir que fique sobre o restante do conteúdo */
+}
+
+header {
+    height: 200px;
+    background-color: steelblue;
+}
+
+nav.superior {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Navegação lateral */
+nav.lateral {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 25%;
+    background-color: #f1f1f1;  
+}
+
+/* Conteúdo principal */
+main {   /* Caixa da direita */
+    background-color: white;
+    border-radius: 20px;
+    border: 1px dashed gray;
+    width: 74%;     
+    float: right;    
+    margin-left: 1%; /* Espaço para a lateral fixa */
+    padding: 20px;
+}
+
+main p,
+main h3 {
+    text-indent: 2%;
+}
+
+main h3 {
+    color: red;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    clear: both;
+    width: 100%;
+}
+
+footer p:first-child {
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* nav vertical inicio */
+nav.lateral ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.lateral li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+nav.lateral li a:hover {
+    background-color: gray;
+    color: white;
+    text-indent: 10px;
+}
+
+nav.lateral .active {
+    background-color: steelblue;
+    color: white;
+}
+/* nav vertical fim */
+
+/* nav topo inicio*/
+nav.topo ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;
+    background-color: gray;
+    position: fixed;
+    width: 100%;
+    text-align: center;*/
+}
+
+nav.topo li {
+    display: inline-block;
+}
+
+nav.topo li a {
+    color: white;
+    display: block;
+    /*text-align: center;*/
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav.topo li a:hover {
+    background-color: black;
+}
+
+nav.topo .active {
+    background-color: steelblue;
+}
+/* nav topo fim*/
+
+/* nav superior inicio*/
+nav.superior ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+    text-align: center;
+}
+
+nav.superior li {
+    float: left;
+    border-right: 1px solid dimgray;
+}
+
+nav.superior li:last-child {
+    border-right: none;
+}
+
+nav.superior li a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav.superior li a:hover {
+    background-color: black;
+}
+
+nav.superior .active {
+    background-color: steelblue;
+}
+/* nav superior fim*/
